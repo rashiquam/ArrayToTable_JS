@@ -1,0 +1,28 @@
+<body>
+    <link rel="stylesheet" href="styles.css">
+    <table id="table"  border="1">
+    </table>
+
+    <script>
+        let tableArr = [["Group Id", "Project Name"],
+        ["G6", "Develop a Software for Categorization of cases"],
+        ["G8", "Develop a Software for Categorization of cases"],
+        ["G41", "Crowd Sourcing model for preparing large question banks"],
+        ["G47", "Crowd Sourcing model for preparing large question banks"],
+        ["G30", "Online project platform for sharing"],
+        ["G26", "Online project platform for sharing"],
+        ["G33", "Centralized grievance system portal"],
+        ["G38", "Centralized grievance system portal"]]
+
+        table=document.getElementById("table");
+        for(var i=0;i<tableArr.length;i++)
+        {
+            var newRow=table.insertRow(table.length);
+            for(var j=0;j<tableArr[i].length;j++)
+            {
+                var cell=newRow.insertCell(j);
+                cell.innerHTML=tableArr[i][j];
+            }
+        }
+    </script>
+</body>
